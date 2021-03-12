@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sort 3 numbers</title>
+</head>
+<body>
+    <script>
+        let  a = +prompt('Input a:');
+        let b = +prompt('Input b: ');
+        let c = +prompt('Input c: ');
+        if (a>b && a>c){
+            if (b>c) {
+                document.write(a+' '+b+' '+c);
+            } else document.write(a+' '+c+' '+b);
+        }   else if (b>a && b>c){
+                if (a>c) {
+                    document.write(b+' '+a+' '+c);
+                }   else document.write(b+' '+c+' '+a);
+        }       else if (c>a && c>b){
+                if (a>b) {
+                    document.write(c+' '+a+' '+b);
+                } else document.write(c+' '+b+' '+a);
+        }   else document.write(a+' '+b+' '+c);
+    </script>
+</body>
+</html>
